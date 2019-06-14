@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PHOTOZA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/public/css/main.css" type = "text/css">
+  <link rel="stylesheet" href="/public/css/account-edit.css" type = "text/css">
+  <link rel="stylesheet" href="/public/css/scroll.css" type = "text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body class="page-edit">
+    {{>menu}}
+  <div class="account-edit">
+  <div class="account-edit-title">
+    <span>Изменение данных</span>
+  </div>
+    <div class="information">
+      <div class="photo-img">
+        <img src="{{user.image}}">
+        <img class="transform" src="/public/image/icons8-compact-camera-100.png" >
+        <div class="download">
+         <span class="download__title">Загрузить фото</span>
+          <div class="download__img">
+          <form  method="POST" enctype="multipart/form-data" name="fileinfo" id="imgmain">
+           <div class="fl_upld">
+             <label><input id="fl_inp" type="file" name="file">Выберите файл</label>
+             <div id="fl_nm">Файл не выбран</div>
+           </div>
+           <button type="submit" name="button"class="upload-button">Загрузить</button>
+          </form>
+         </div>
+       </div>
+      </div>
+      <form class="about-me" id="formEdit">
+        <div class="about-me__name">
+          <input type="text" name="firstName" value="{{user.firstName}}" />
+        </div>
+        <div class="about-me__name">
+          <input type="text" name="lastName" value="{{user.lastName}}" />
+        </div>
+        <div class="about-me__city">
+          <select id="district">
+            <option value="{{user.district_id}}" selected>{{district_name}}</option>
+            {{#each district}}
+              <option value="{{this.district}}">{{this.name}}</option>
+            {{/each}}
+          </select>
+        </div>
+        <div class="about-me__city">
+          <select id="region">
+            <option value="{{user.region_id}}" selected>{{region_name}}</option>
+            {{#each region}}
+              <option value="{{this.region}}">{{this.name}}</option>
+            {{/each}}
+          </select>
+        </div>
+        <div class="about-me__city">
+          <select id="city">
+            <option value="{{user.city_id}}" selected>{{user.city_name}}</option>
+            {{#each city}}
+              <option value="{{this.city}}">{{this.name}}</option>
+            {{/each}}
+          </select>
+        </div>
+        <div class="about-me__name">
+          <input type="text" name="about_youself" placeholder="Напишите что-нибудь о себе" value="{{user.about_youself}}">
+        </div>
+        <div class="about-me__name">
+          <input type="text" name="web_site" placeholder="Укажите свой сайт портфолио" value="{{user.web_site}}">
+        </div>
+        <div class="about-me__name">
+          <input type="text" name="cost_works" placeholder="Укажите цену работы" value="{{user.cost_works}}">
+        </div>
+      <div class="edit">
+        <button type="submit"><a class="edit__button">Cохранить изменения</a></button>
+      </div>
+    </form>
+    </div>
+    <script type="text/javascript" src="/public/js/geo.js"></script>
+    <script type="text/javascript" src="/public/js/edit.js"></script>
+  </div>
+</body>
+</html>

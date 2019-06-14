@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PHOTOZA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/public/css/main.css" type = "text/css">
+  <link rel="stylesheet" href="/public/css/search.css" type = "text/css">
+  <link rel="stylesheet" href="/public/css/scroll.css" type = "text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="shortcut icon" href="/public/image/ico.png" type="image/png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body class="page-search">
+{{>menu}}
+
+  <div class="search-fon">
+  <div class="search-photographer">
+    <div class="box-title">
+      <div class="back"><a href="/"><img src="/public/image/icons8-back-arrow-501.png"></a></div>
+      <div class="title">Найти фотографа</div>
+    </div>
+    <div class="search">
+      <form class="search__container">
+        <div class="search-item">
+        <div class="form-group col-md-4">
+          <label>Выберите округ</label>
+          <select id="district" class="form-control">
+            <option disabled selected>Округ</option>
+            {{#each district}}
+              <option value="{{this.district}}">{{this.name}}</option>
+            {{/each}}
+          </select>
+        </div>
+
+        <div class="form-group col-md-4">
+          <label>Выберите регион</label>
+          <select id="region" class="form-control">
+            <option disabled selected>Регион</option>
+            {{#each region}}
+              <option value="{{this.region}}">{{this.name}}</option>
+            {{/each}}
+          </select>
+        </div>
+
+        <div class="form-group col-md-4">
+          <label>Выберите город</label>
+          <select id="city" class="form-control">
+            <option disabled selected>Город</option>
+            {{#each city}}
+              <option value="{{this.city}}">{{this.name}}</option>
+            {{/each}}
+          </select>
+        </div>
+      </form>
+  </div>
+    <div class="search__button">
+      <button id="btn_search">Поиск</button>
+    </div>
+
+   <div class="sort-item">
+    <div class="form-group col-md-6">
+      <label>Цена</label>
+      <select id="inputCost" name="sort-cost" class="form-control">
+        <option>Выберите способ сортировки</option>
+        <option value="sort1">По возрастанию</option>
+        <option value="sort2">По убыванию</option>
+      </select>
+    </div>
+
+    <div class="form-group col-md-6">
+      <label>Рейтинг</label>
+        <select id="inputRating" class="form-control" name="sort-rating">
+      <option>Выберите способ сортировки</option>
+       <option value="sort1">По возрастанию</option>
+       <option value="sort2">По убыванию</option>
+      </select>
+    </div>
+   </div>
+
+  </form>
+</div>
+</div>
+
+    <div class="photographer-list">
+      <div id="list"></div>
+      {{#each user}}
+        <a  href="/site/photographer/{{this._id}}" class="box-photographer" data-cost="{{this.cost_works}}" data-rating="{{this.rating}}">
+            <div class="photo-av">
+              <img src="{{this.image}}">
+            </div>
+            <div class="information">
+              <div class="name">Имя: {{this.firstName}} {{this.lastName}}</div>
+              <div class="city">Город: {{this.city_name}}</div>
+              <div class="rating">Рейтинг: {{this.rating}}</div>
+              <div class="cost">Стоимость съемки: {{this.cost_works}}</div>
+            </div>
+        </a>
+      {{/each}}
+    </div>
+    </div>
+  </div>
+<!--футер-->
+<div class="fon4">
+<footer class="footer">
+    © 2019 «PHOTOZA»
+</footer>
+</div>
+
+<div class="totop">
+  <a href="#top" class="totop-button"><img src="/public/image/icons8-slide-up-filled-501.png"></a>
+</div>
+
+
+<script type="text/javascript" src="/public/js/geo.js"></script>
+<script type="text/javascript" src="/public/js/search.js"></script>
+
+</body>
+</html>

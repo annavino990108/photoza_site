@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PHOTOZA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/public/css/main.css" type = "text/css">
+  <link rel="stylesheet" href="/public/css/scroll.css" type = "text/css">
+  <link rel="stylesheet" href="/public/css/animate.css" type = "text/css">
+  <link rel="stylesheet" href="/public/css/media-main.css" type = "text/css">
+  <link href="/public/libs/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="/public/libs/scripts/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+  <link rel="shortcut icon" href="/public/image/ico.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body class="page">
+	<!--меню-->
+	<div class="fon">
+{{>menu}}
+
+  <content class="content">
+ 	  <div class="content-top">
+ 	  	<div class="content-left">
+        	<div class="text-title">Крутой сервис для самых важных моментов</div>
+      	  <div class="piece">
+      	    <img src="/public/image/zast.png">
+      	  </div>
+          <form class="content-search">
+            <button type="submit"><a href="/site/search" class="content-search__button">Найти фотографа</a></button>
+   	      </form>
+ 	  		<div class="content-bottom">
+ 	  			 <div class="about wow fadeInLeft" data-wow-delay="1s"><span>Сайт для поиска и заказа фотографов</span></div>
+ 	  			 <div class="conditions wow fadeInLeft" data-wow-delay="3s"><span>Просто выберите Ваш город и мы подберем для Вас идеального фотографа</span></div>
+           <div class="help wow fadeInLeft" data-wow-delay="5s"><span>Остались вопросы?<br> Пиши на </span><br><a>pphotoza@gmail.com</a></div>
+        </div>
+ 	  	</div>
+</div>
+  </content>
+</div>
+
+<div class="fon3">
+  <div class="gal">
+
+       <div class="container-gal">
+            <div id="gallery">
+                {{#each file}}
+                  <figure class="photo">
+                      <a href="{{this.path}}" data-lightbox="roadtrip"><img src="{{this.imgshort}}" alt="Eagle" /></a>
+                  </figure>
+                {{/each}}
+
+            </div>
+        </div>
+
+        <form class="gal-more">
+          <button type="submit"><a href="/site/gallery" class="gal-more__button">Показать еще</a></button>
+       	</form>
+</div>
+ </div>
+<!--</div>-->
+
+<!--<div class="section" data-anchor="block4">-->
+<div class="fon4">
+ <div class="rating-page">
+   {{#each user}}
+     <a href="/site/photographer/{{this._id}}">
+        <div class="rating-box">
+      <img class="img" src="{{this.image}}">
+      <div class="grad"></div>
+      <div class="inf">
+        <div class="name">{{this.firstName}} {{this.lastName}}</div>
+        <div class="city">{{this.city}}</div>
+        <div class="rating">
+          <div class="personal-information__rating">
+            <img src="public/image/icons8-star-502.png">
+            <img src="public/image/icons8-star-502.png">
+            <img src="public/image/icons8-star-502.png">
+            <img src="public/image/icons8-star-502.png">
+            <img src="public/image/icons8-star-502.png">
+          </div>
+          <span class="rat">Рейтинг: {{this.rating}}</span>
+        </div>
+      </div>
+    </div>
+      <a>
+    {{/each}}
+
+</div>
+
+<footer class="footer">
+		© 2019 «PHOTOZA»
+</footer>
+</div>
+<!--</div>-->
+
+<!--футер-->
+
+
+
+<!--</div>-->
+<!--end-->
+
+
+<div class="totop">
+	<a href="#block1" class="totop-button"><img src="/public/image/icons8-slide-up-filled-501.png"></a>
+</div>
+<!--cкрипты bootstrap-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!--галерея-->
+<script src="app/libs/lightbox/js/lightbox-plus-jquery.min.js"></script>
+<script src="app/js/wow.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+
+</body>
+</html>
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PHOTOZA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="public/css/main.css" type = "text/css">
+  <link rel="stylesheet" href="public/css/scroll.css" type = "text/css">
+  <link href="public/libs/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="public/libs/scripts/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+  <link rel="shortcut icon" href="public/image/ico.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="public/js/some.js"></script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+
+</head>
+
+<body class="page">
+
+
+<div id="fullpage">
+    <div class="section" data-anchor="block1">
+
+<div class="fon">
+  {{>menu}}
+
+
+
+  <content class="content">
+ 	  <div class="content-top">
+ 	  	<div class="content-left">
+        	<div class="text-title">Крутой сервис для самых важных моментов</div>
+      	  <div class="piece">
+      	    <span class="piece__start">PHO</span>
+      	    <span class="piece__center">TO</span>
+      	  	<span class="piece__end">ZA</span>
+      	  </div>
+      	  <div class="piece-iz">
+      	    <span class="piece__start">PHO</span>
+      	    <span class="piece__center">TO</span>
+      	  	<span class="piece__end">ZA</span>
+      	  </div>
+        <form class="content-search">
+          <button type="submit"><a href="/site/search" class="content-search__button">Найти фотографа</a></button>
+ 	      </form>
+ 	  		<div class="content-bottom">
+ 	  			 <div class="about"><span>Сайт для поиска и заказа фотографов</span></div>
+ 	  			 <div class="conditions"><span>Просто выберите Ваш город и мы подберем для Вас идеального фотографа</span></div>
+           <div class="help"><span>Остались вопросы?<br> Пиши на </span><br><a>pphotoza@gmail.com</a></div>
+        </div>
+ 	  	</div>
+</div>
+  </content>
+</div>
+</div>
+<div class="section" data-anchor="block3">
+<div class="fon3">
+  <div class="gal">
+
+       <div class="container-gal">
+            <div id="gallery">
+              {{#each file}}
+                <figure class="photo">
+                    <a href="{{this.path}}" data-lightbox="roadtrip"><img src="{{this.imgshort}}" alt="Eagle" /></a>
+                </figure>
+              {{/each}}
+            </div>
+            </div>
+
+  <form class="gal-more">
+    <button type="submit"><a href="/site/gallery" class="gal-more__button">Показать еще</a></button>
+ 	</form>
+</div>
+ </div>
+</div>
+
+
+<div class="section" data-anchor="block4">
+<div class="fon4">
+ <div class="rating-page">
+   {{#each user}}
+     <a href="/site/photographer/{{this._id}}">
+ 	   	  <div class="rating-box">
+ 		  <img class="img" src="{{this.image}}">
+ 		  <div class="grad"></div>
+ 		  <div class="inf">
+ 			  <div class="name">{{this.firstName}} {{this.lastName}}</div>
+ 			  <div class="city">{{this.city}}</div>
+ 			  <div class="rating">
+ 			  	<div class="personal-information__rating">
+            <img src="public/image/icons8-star-502.png">
+            <img src="public/image/icons8-star-502.png">
+            <img src="public/image/icons8-star-502.png">
+            <img src="public/image/icons8-star-502.png">
+            <img src="public/image/icons8-star-502.png">
+          </div>
+          <span class="rat">Рейтинг: {{this.rating}}</span>
+ 			  </div>
+ 		  </div>
+ 	  </div>
+      <a>
+    {{/each}}
+</div>
+
+<footer class="footer">
+		© 2019 «PHOTOZA»
+</footer>
+</div>
+</div>
+
+
+
+
+
+</div>
+
+
+
+<div class="totop">
+	<a href="#block1" class="totop-button"><img src="/public/image/icons8-slide-up-filled-501.png"></a>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+<script src="app/libs/lightbox/js/lightbox-plus-jquery.min.js"></script>
+
+<script src="app/libs/jquery.fullPage.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                anchors: ['block1', 'block2', 'block3', 'block4'],
+                menu: '.menu',
+                css3: true,
+                scrollingSpeed: 1000,
+        });
+            });
+    </script>
+
+
+</body>
+</html>

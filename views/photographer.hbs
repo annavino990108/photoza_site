@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PHOTOZA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/public/css/main.css" type = "text/css">
+  <link rel="stylesheet" href="/public/css/personal.css" type = "text/css">
+  <link rel="stylesheet" href="/public/css/scroll.css" type = "text/css">
+  <link href="app/libs/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="shortcut icon" href="/public/image/ico.png" type="image/png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body class="page-personal">
+  {{>menu}}
+
+<div class="personal">
+    <div class="personal-box">
+      <div class="personal-box__title">
+        <span>Страничка фотографа</span>
+      </div>
+      <div class="personal-information">
+          <div class="personal-content">
+            <div class="personal-content__name">{{user.firstName}} {{user.lastName}}</div>
+            <div class="personal-content__city">{{user.city_name}}</div>
+            <div class="personal-content__rating">
+
+              <input type="checkbox" id="check-indicator1">
+              <label for="check-indicator1" class="indicator"><img src="/public/image/icons8-star-50.png"></label>
+              <input type="checkbox" id="check-indicator2">
+              <label for="check-indicator2" class="indicator"><img src="/public/image/icons8-star-50.png"></label>
+              <input type="checkbox" id="check-indicator3">
+              <label for="check-indicator3" class="indicator"><img src="/public/image/icons8-star-50.png"></label>
+              <input type="checkbox" id="check-indicator4">
+              <label for="check-indicator4" class="indicator"><img src="/public/image/icons8-star-50.png"></label>
+              <input type="checkbox" id="check-indicator5">
+              <label for="check-indicator5" class="indicator"><img src="/public/image/icons8-star-50.png"></label>
+              <input type="text" id="userId" value="{{user._id}}" style="display:none">
+              <span id="rating">Рейтинг:{{user.rating}}</span>
+            </div>
+            <div class="personal-content__style">
+              <span>Направления съемки:</span>
+              <ul>
+                <li>портрет</li>
+                <li>пейзаж</li>
+                <li>съемки детских праздников</li>
+              </ul>
+            </div>
+            <div class="personal-content__about-me">
+              <span>О себе:</span>
+              <p>{{user.about_youself}}</p>
+            </div>
+            <div class="personal-content__cost">
+              <span>Стоимость съемки: {{user.cost_works}}</span>
+            </div>
+            <div class="personal-content__button">
+              <a href="../../api/create_dialog/{{user._id}}"><button>Написать фотографу</button></a>
+            </div>
+        </div>
+
+        <div class="personal-img">
+          <div class="personal-img__photo"><img src="{{user.image}}"></div>
+          </div>
+
+
+      </div>
+    </div>
+    <div class="personal-gallery">
+      <div id="gallery">
+        {{#each file}}
+        <figure class="photo">
+          <a href="/site/gallery/{{this.user}}"><img src="{{this.imgshort}}"/></a>
+        </figure>
+        {{/each}}
+      </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/public/js/photographer.js"></script>
+<script src="/public/libs/lightbox/js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>

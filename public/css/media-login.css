@@ -1,0 +1,2324 @@
+@media screen and (max-width: 1400px) {
+  .page {
+    overflow-x: hidden;
+  }
+  .img-block {
+    width: 50%;
+    height: 100%;
+  }
+  .img-block img {
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+  }
+  .login {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form {
+    width: 100%;
+    height: 100%;
+    transition: all 2s;
+    background-color: #fff;
+    border: 1px solid #fff;
+  }
+  .form__title {
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px;
+    font-weight: bold;
+    font-size: 50px;
+    color: #96E6B3;
+    text-transform: uppercase;
+    line-height: 1.5em;
+  }
+  .form__close {
+    position: absolute;
+    left: 94%;
+    top: 0%;
+  }
+  .form__close img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+  }
+  .form__login {
+    margin: 20px 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .form__login__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .form__login__box__email {
+    width: 100%;
+    height: 50px;
+    margin: 20px 0px;
+    border: none;
+    background: none;
+    border-bottom: 3px solid #764BA2;
+    padding-left: 10px;
+    color: #000;
+  }
+  .form__login__box__password {
+    width: 100%;
+    height: 50px;
+    margin: 20px 0px;
+    border: none;
+    background: none;
+    border-bottom: 3px solid #764BA2;
+    padding-left: 10px;
+    color: #000;
+  }
+  .form__link {
+    display: flex;
+    justify-content: center;
+    margin: 0px 30px;
+    cursor: pointer;
+  }
+  .form__link__forget {
+    color: #764BA2;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .form__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .form__button__entry {
+    padding: 5px 20px;
+    width: 200px;
+    background: none;
+    border-radius: 0px;
+    border: 3px solid #96E6B3;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #96E6B3;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #96E6B3 50%, #96E6B3);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all 1s;
+    margin-right: 20px;
+  }
+  .form__button__entry:hover {
+    background-position: 0 0;
+    color: #764BA2;
+  }
+  .form__button__registr:hover {
+    background-position: 0 0;
+    color: #764BA2;
+  }
+  .form__button__registr {
+    padding: 5px 20px;
+    width: 200px;
+    background: none;
+    border-radius: 0px;
+    border: 3px solid #96E6B3;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #96E6B3;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #96E6B3 50%, #96E6B3);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all 1s;
+  }
+  .registration {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-reg {
+    width: 100%;
+    height: 100%;
+    transition: all 2s;
+    position: relative;
+    left: 0;
+    z-index: 9;
+    background-color: #fff;
+    border: 1px solid #fff;
+  }
+  .form-reg__close {
+    position: absolute;
+    left: 94%;
+    top: 0%;
+  }
+  .form-reg__close img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+  }
+  .form-reg__title {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #A3D9FF;
+    text-transform: uppercase;
+    line-height: 1.5em;
+  }
+  .registration-form {
+    margin: 0px 20px;
+  }
+  .registration-form__box {
+    display: flex;
+    flex-direction: column;
+  }
+  .registration-form__box input {
+    margin-top: 30px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    background: none;
+    border-bottom: 3px solid #A3D9FF;
+    padding-left: 10px;
+    font-size: 15px;
+    color: #000;
+  }
+  .registration-form__check {
+    margin-top: 20px;
+    color: #000;
+  }
+  .registration-form__check #exampleRadios1 {
+    color: #764BA2;
+  }
+  .registration-form__button {
+    display: flex;
+    justify-content: center;
+  }
+  .registration-form__button .registr {
+    padding: 5px 20px;
+    width: 300px;
+    background: none;
+    border-radius: 0px;
+    border: 3px solid #A3D9FF;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #A3D9FF;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #A3D9FF 50%, #A3D9FF);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all 1s;
+  }
+  .registration-form__button .registr:hover {
+    background-position: 0 0;
+    color: #764BA2;
+  }
+  .registration-form__confirm input {
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    border: 2px solid #BE2D29;
+    padding-left: 10px;
+    font-size: 20px;
+  }
+  .form-check {
+    margin: 5px 10px;
+  }
+  .form-check__input {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+  .form-check__label {
+    margin-left: 20px;
+    font-size: 15px;
+  }
+  .password {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  .form-pasw {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+  }
+  .form-pasw__close {
+    position: absolute;
+    left: 94%;
+    top: 0%;
+  }
+  .form-pasw__close img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+  }
+  .form-password {
+    margin: 0px 20px;
+  }
+  .form-password__box {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-password__box input {
+    margin-top: 20px;
+    width: 90%;
+    height: 30px;
+    border: none;
+    background: none;
+    border-bottom: 3px solid #DA3E52;
+    padding-left: 10px;
+    font-size: 15px;
+  }
+  .form-password__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .form-password__button .eml-otpr {
+    padding: 5px 20px;
+    width: 300px;
+    background: none;
+    border-radius: 0px;
+    border: 3px solid #DA3E52;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #DA3E52;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #DA3E52 50%, #DA3E52);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all 1s;
+  }
+  .form-password__button .eml-otpr:hover {
+    background-position: 0 0;
+    color: #764BA2;
+  }
+  .form-password__code {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: none;
+  }
+  .form-password__code__title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #DA3E52;
+    text-transform: uppercase;
+    line-height: 1.5em;
+  }
+  .form-password__code__box input {
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    background: none;
+    border-bottom: 3px solid #DA3E52;
+    padding-left: 10px;
+    font-size: 15px;
+  }
+  .form-password__code__button {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .form-password__code__button .otpr {
+    padding: 5px 20px;
+    width: 200px;
+    background: none;
+    border-radius: 0px;
+    border: 3px solid #DA3E52;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #DA3E52;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #DA3E52 50%, #DA3E52);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all 1s;
+  }
+  .form-password__code__button .otpr:hover {
+    background-position: 0 0;
+    color: #764BA2;
+  }
+  .modal-body p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .img-block {
+    width: 40%;
+    height: 100%;
+  }
+  .img-block img {
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+  }
+  .login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form {
+    width: 100%;
+    height: 100%;
+    transition: all 2s;
+    position: relative;
+    left: 0;
+    z-index: 9;
+    background-color: #fff;
+    border: 1px solid #fff;
+  }
+  .form__title {
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px;
+    font-weight: bold;
+    font-size: 50px;
+    color: #96E6B3;
+    text-transform: uppercase;
+    line-height: 1.5em;
+  }
+  .form__close {
+    position: absolute;
+    left: 94%;
+    top: 0%;
+  }
+  .form__close img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+  }
+  .form__login {
+    margin: 20px 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .form__login__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .form__login__box__email {
+    width: 100%;
+    height: 50px;
+    margin: 20px 0px;
+    border: none;
+    background: none;
+    border-bottom: 3px solid #764BA2;
+    padding-left: 10px;
+    color: #000;
+  }
+  .form__login__box__password {
+    width: 100%;
+    height: 50px;
+    margin: 20px 0px;
+    border: none;
+    background: none;
+    border-bottom: 3px solid #764BA2;
+    padding-left: 10px;
+    color: #000;
+  }
+  .form__link {
+    display: flex;
+    justify-content: center;
+    margin: 0px 30px;
+    cursor: pointer;
+  }
+  .form__link__forget {
+    color: #764BA2;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .form__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .form__button__entry {
+    padding: 5px 20px;
+    width: 200px;
+    background: none;
+    border-radius: 0px;
+    border: 3px solid #96E6B3;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #96E6B3;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #96E6B3 50%, #96E6B3);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all 1s;
+    margin-right: 20px;
+  }
+  .form__button__entry:hover {
+    background-position: 0 0;
+    color: #764BA2;
+  }
+  .form__button__registr:hover {
+    background-position: 0 0;
+    color: #764BA2;
+  }
+  .form__button__registr {
+    padding: 5px 20px;
+    width: 200px;
+    background: none;
+    border-radius: 0px;
+    border: 3px solid #96E6B3;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #96E6B3;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #96E6B3 50%, #96E6B3);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all 1s;
+  }
+  .registration {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-reg {
+    width: 100%;
+    height: 100%;
+    transition: all 2s;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #fff;
+  }
+  .form-reg__close {
+    position: absolute;
+    left: 94%;
+    top: 0%;
+  }
+  .form-reg__close img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+  }
+  .form-reg__title {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #A3D9FF;
+    text-transform: uppercase;
+    line-height: 1.5em;
+  }
+  .registration-form {
+    margin: 0px 20px;
+  }
+  .registration-form__box {
+    display: flex;
+    flex-direction: column;
+  }
+  .registration-form__box input {
+    margin-top: 30px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    background: none;
+    border-bottom: 3px solid #A3D9FF;
+    padding-left: 10px;
+    font-size: 15px;
+    color: #000;
+  }
+  .registration-form__check {
+    margin-top: 20px;
+    color: #000;
+  }
+  .registration-form__check #exampleRadios1 {
+    color: #764BA2;
+  }
+  .registration-form__button {
+    display: flex;
+    justify-content: center;
+  }
+  .registration-form__button .registr {
+    padding: 5px 20px;
+    width: 300px;
+    background: none;
+    border-radius: 0px;
+    border: 3px solid #A3D9FF;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #A3D9FF;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #A3D9FF 50%, #A3D9FF);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all 1s;
+  }
+  .registration-form__button .registr:hover {
+    background-position: 0 0;
+    color: #764BA2;
+  }
+  .registration-form__confirm input {
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    border: 2px solid #BE2D29;
+    padding-left: 10px;
+    font-size: 20px;
+  }
+  .form-check {
+    margin: 5px 10px;
+  }
+  .form-check__input {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+  .form-check__label {
+    margin-left: 20px;
+    font-size: 15px;
+  }
+  .password {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-pasw {
+    width: 100%;
+    height: 100%;
+    transition: all 2s;
+    position: relative;
+    left: 0;
+    z-index: 9;
+    background-color: #fff;
+    border: 1px solid #fff;
+  }
+  .form-pasw__close {
+    position: absolute;
+    left: 90%;
+    top: 0%;
+  }
+  .form-pasw__close img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+  }
+  .form-pasw__title {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+    padding-top: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #DA3E52;
+    text-transform: uppercase;
+    line-height: 1.5em;
+  }
+  .form-password {
+    margin: 0px 20px;
+  }
+  .form-password__box {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-password__box input {
+    margin-top: 20px;
+    width: 90%;
+    height: 30px;
+    border: none;
+    background: none;
+    border-bottom: 3px solid #DA3E52;
+    padding-left: 10px;
+    font-size: 15px;
+  }
+  .form-password__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .form-password__button .eml-otpr {
+    padding: 5px 20px;
+    width: 300px;
+    background: none;
+    border-radius: 0px;
+    border: 3px solid #DA3E52;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #DA3E52;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #DA3E52 50%, #DA3E52);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all 1s;
+  }
+  .form-password__button .eml-otpr:hover {
+    background-position: 0 0;
+    color: #764BA2;
+  }
+  .form-password__code {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: none;
+  }
+  .form-password__code__title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #DA3E52;
+    text-transform: uppercase;
+    line-height: 1.5em;
+  }
+  .form-password__code__box input {
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    background: none;
+    border-bottom: 3px solid #DA3E52;
+    padding-left: 10px;
+    font-size: 15px;
+  }
+  .form-password__code__button {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .form-password__code__button .otpr {
+    padding: 5px 20px;
+    width: 200px;
+    background: none;
+    border-radius: 0px;
+    border: 3px solid #DA3E52;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #DA3E52;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #DA3E52 50%, #DA3E52);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all 1s;
+  }
+  .form-password__code__button .otpr:hover {
+    background-position: 0 0;
+    color: #764BA2;
+  }
+  .modal-body p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .img-block {
+    width: 40%;
+    height: 100%;
+  }
+  .img-block img {
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+  }
+  .login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form {
+    width: 100%;
+    height: 100%;
+    transition: all 2s;
+    position: relative;
+    left: 0;
+    z-index: 9;
+    background-color: #fff;
+    border: 1px solid #fff;
+  }
+  .form__title {
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px;
+    font-weight: bold;
+    font-size: 50px;
+    color: #96E6B3;
+    text-transform: uppercase;
+    line-height: 1.5em;
+  }
+  .form__close {
+    position: absolute;
+    left: 94%;
+    top: 0%;
+  }
+  .form__close img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+  }
+  .form__login {
+    margin: 20px 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .form__login__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .form__login__box__email {
+    width: 100%;
+    height: 50px;
+    margin: 20px 0px;
+    border: none;
+    background: none;
+    border-bottom: 3px solid #764BA2;
+    padding-left: 10px;
+    color: #000;
+  }
+  .form__login__box__password {
+    width: 100%;
+    height: 50px;
+    margin: 20px 0px;
+    border: none;
+    background: none;
+    border-bottom: 3px solid #764BA2;
+    padding-left: 10px;
+    color: #000;
+  }
+  .form__link {
+    display: flex;
+    justify-content: center;
+    margin: 0px 30px;
+    cursor: pointer;
+  }
+  .form__link__forget {
+    color: #764BA2;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .form__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .form__button__entry {
+    padding: 5px 20px;
+    width: 200px;
+    background: none;
+    border-radius: 0px;
+    border: 3px solid #96E6B3;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #96E6B3;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #96E6B3 50%, #96E6B3);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all 1s;
+    margin-right: 20px;
+  }
+  .form__button__entry:hover {
+    background-position: 0 0;
+    color: #764BA2;
+  }
+  .form__button__registr:hover {
+    background-position: 0 0;
+    color: #764BA2;
+  }
+  .form__button__registr {
+    padding: 5px 20px;
+    width: 200px;
+    background: none;
+    border-radius: 0px;
+    border: 3px solid #96E6B3;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #96E6B3;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #96E6B3 50%, #96E6B3);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all 1s;
+  }
+  .registration {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-reg {
+    width: 100%;
+    height: 100%;
+    transition: all 2s;
+    position: relative;
+    left: 0;
+    z-index: 9;
+    background-color: #fff;
+    border: 1px solid #fff;
+  }
+  .form-reg__close {
+    position: absolute;
+    left: 94%;
+    top: 0%;
+  }
+  .form-reg__close img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+  }
+  .form-reg__title {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #A3D9FF;
+    text-transform: uppercase;
+    line-height: 1.5em;
+  }
+  .registration-form {
+    margin: 0px 20px;
+  }
+  .registration-form__box {
+    display: flex;
+    flex-direction: column;
+  }
+  .registration-form__box input {
+    margin-top: 30px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    background: none;
+    border-bottom: 3px solid #A3D9FF;
+    padding-left: 10px;
+    font-size: 15px;
+    color: #000;
+  }
+  .registration-form__check {
+    margin-top: 20px;
+    color: #000;
+  }
+  .registration-form__check #exampleRadios1 {
+    color: #764BA2;
+  }
+  .registration-form__button {
+    display: flex;
+    justify-content: center;
+  }
+  .registration-form__button .registr {
+    padding: 5px 20px;
+    width: 300px;
+    background: none;
+    border-radius: 0px;
+    border: 3px solid #A3D9FF;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #A3D9FF;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #A3D9FF 50%, #A3D9FF);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all 1s;
+  }
+  .registration-form__button .registr:hover {
+    background-position: 0 0;
+    color: #764BA2;
+  }
+  .registration-form__confirm input {
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    border: 2px solid #BE2D29;
+    padding-left: 10px;
+    font-size: 20px;
+  }
+  .form-check {
+    margin: 5px 10px;
+  }
+  .form-check__input {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+  .form-check__label {
+    margin-left: 20px;
+    font-size: 15px;
+  }
+  .password {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-pasw {
+    width: 100%;
+    height: 100%;
+    transition: all 2s;
+    position: relative;
+    left: 0;
+    z-index: 9;
+    background-color: #fff;
+    border: 1px solid #fff;
+  }
+  .form-pasw__close {
+    position: absolute;
+    left: 90%;
+    top: 0%;
+  }
+  .form-pasw__close img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+  }
+  .form-pasw__title {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+    padding-top: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #DA3E52;
+    text-transform: uppercase;
+    line-height: 1.5em;
+  }
+  .form-password {
+    margin: 0px 20px;
+  }
+  .form-password__box {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-password__box input {
+    margin-top: 20px;
+    width: 95%;
+    height: 30px;
+    border: none;
+    background: none;
+    border-bottom: 3px solid #DA3E52;
+    padding-left: 10px;
+    font-size: 15px;
+  }
+  .form-password__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .form-password__button .eml-otpr {
+    padding: 5px 20px;
+    width: 300px;
+    background: none;
+    border-radius: 0px;
+    border: 3px solid #DA3E52;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #DA3E52;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #DA3E52 50%, #DA3E52);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all 1s;
+  }
+  .form-password__button .eml-otpr:hover {
+    background-position: 0 0;
+    color: #764BA2;
+  }
+  .form-password__code {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    width: 500px;
+    display: none;
+  }
+  .form-password__code__title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #DA3E52;
+    text-transform: uppercase;
+    line-height: 1.5em;
+  }
+  .form-password__code__box input {
+    margin-top: 20px;
+    width: 95%;
+    height: 30px;
+    border: none;
+    background: none;
+    border-bottom: 3px solid #DA3E52;
+    padding-left: 10px;
+    font-size: 15px;
+  }
+  .form-password__code__button {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .form-password__code__button .otpr {
+    padding: 5px 20px;
+    width: 200px;
+    background: none;
+    border-radius: 0px;
+    border: 3px solid #DA3E52;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #DA3E52;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #DA3E52 50%, #DA3E52);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all 1s;
+  }
+  .form-password__code__button .otpr:hover {
+    background-position: 0 0;
+    color: #764BA2;
+  }
+  .modal-body p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .img-block {
+    width: 40%;
+    height: 100%;
+  }
+  .img-block img {
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+  }
+  .login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form {
+    width: 100%;
+    height: 100%;
+    transition: all 2s;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #fff;
+  }
+  .form__title {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    font-weight: bold;
+    font-size: 40px;
+    color: #96E6B3;
+    text-transform: uppercase;
+    line-height: 1.5em;
+  }
+  .form__close {
+    position: absolute;
+    left: 93%;
+    top: 0%;
+  }
+  .form__close img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+  }
+  .form__login {
+    margin: 20px 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .form__login__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .form__login__box__email {
+    width: 100%;
+    height: 50px;
+    margin: 20px 0px;
+    border: none;
+    background: none;
+    border-bottom: 3px solid #764BA2;
+    padding-left: 10px;
+    color: #000;
+  }
+  .form__login__box__password {
+    width: 100%;
+    height: 50px;
+    margin: 20px 0px;
+    border: none;
+    background: none;
+    border-bottom: 3px solid #764BA2;
+    padding-left: 10px;
+    color: #000;
+  }
+  .form__link {
+    display: flex;
+    justify-content: center;
+    margin: 0px 30px;
+    cursor: pointer;
+  }
+  .form__link__forget {
+    color: #764BA2;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .form__button {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .form__button__entry {
+    margin-bottom: 20px;
+    padding: 5px 20px;
+    width: 200px;
+    background: none;
+    border-radius: 0px;
+    border: 3px solid #96E6B3;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #96E6B3;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #96E6B3 50%, #96E6B3);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all 1s;
+    margin-right: 20px;
+  }
+  .form__button__entry:hover {
+    background-position: 0 0;
+    color: #764BA2;
+  }
+  .form__button__registr:hover {
+    background-position: 0 0;
+    color: #764BA2;
+  }
+  .form__button__registr {
+    padding: 5px 20px;
+    width: 200px;
+    background: none;
+    border-radius: 0px;
+    border: 3px solid #96E6B3;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #96E6B3;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #96E6B3 50%, #96E6B3);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all 1s;
+  }
+  .registration {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-reg {
+    width: 100%;
+    height: 100%;
+    transition: all 2s;
+    position: relative;
+    left: 0;
+    z-index: 9;
+    background-color: #fff;
+    border: 1px solid #fff;
+  }
+  .form-reg__close {
+    position: absolute;
+    left: 94%;
+    top: 0%;
+  }
+  .form-reg__close img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+  }
+  .form-reg__title {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #A3D9FF;
+    text-transform: uppercase;
+    line-height: 1.5em;
+  }
+  .registration-form {
+    margin: 0px 20px;
+  }
+  .registration-form__box {
+    display: flex;
+    flex-direction: column;
+  }
+  .registration-form__box input {
+    margin-top: 30px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    background: none;
+    border-bottom: 3px solid #A3D9FF;
+    padding-left: 10px;
+    font-size: 15px;
+    color: #000;
+  }
+  .registration-form__check {
+    margin-top: 20px;
+    color: #000;
+  }
+  .registration-form__check #exampleRadios1 {
+    color: #764BA2;
+  }
+  .registration-form__button {
+    display: flex;
+    justify-content: center;
+  }
+  .registration-form__button .registr {
+    padding: 5px 20px;
+    width: 300px;
+    background: none;
+    border-radius: 0px;
+    border: 3px solid #A3D9FF;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #A3D9FF;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #A3D9FF 50%, #A3D9FF);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all 1s;
+  }
+  .registration-form__button .registr:hover {
+    background-position: 0 0;
+    color: #764BA2;
+  }
+  .registration-form__confirm input {
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    border: 2px solid #BE2D29;
+    padding-left: 10px;
+    font-size: 20px;
+  }
+  .form-check {
+    margin: 5px 10px;
+  }
+  .form-check__input {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+  .form-check__label {
+    margin-left: 20px;
+    font-size: 15px;
+  }
+  .password {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-pasw {
+    width: 100%;
+    height: 100%;
+    transition: all 2s;
+    position: relative;
+    left: 0;
+    z-index: 9;
+    background-color: #fff;
+    border: 1px solid #fff;
+  }
+  .form-pasw__close {
+    position: absolute;
+    left: 94%;
+    top: 0%;
+  }
+  .form-pasw__close img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+  }
+  .form-pasw__title {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+    padding-top: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #DA3E52;
+    text-transform: uppercase;
+    line-height: 1.5em;
+  }
+  .form-password {
+    margin: 0px 20px;
+  }
+  .form-password__box {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-password__box input {
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    background: none;
+    border-bottom: 3px solid #DA3E52;
+    padding-left: 10px;
+    font-size: 15px;
+  }
+  .form-password__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .form-password__button .eml-otpr {
+    padding: 5px 20px;
+    width: 300px;
+    background: none;
+    border-radius: 0px;
+    border: 3px solid #DA3E52;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #DA3E52;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #DA3E52 50%, #DA3E52);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all 1s;
+  }
+  .form-password__button .eml-otpr:hover {
+    background-position: 0 0;
+    color: #764BA2;
+  }
+  .form-password__code {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    display: none;
+  }
+  .form-password__code__title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #DA3E52;
+    text-transform: uppercase;
+    line-height: 1.5em;
+  }
+  .form-password__code__box input {
+    margin-top: 20px;
+    width: 90%;
+    height: 30px;
+    border: none;
+    background: none;
+    border-bottom: 3px solid #DA3E52;
+    padding-left: 10px;
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  .form-password__code__button {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .form-password__code__button .otpr {
+    padding: 5px 20px;
+    width: 200px;
+    background: none;
+    border-radius: 0px;
+    border: 3px solid #DA3E52;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #DA3E52;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #DA3E52 50%, #DA3E52);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all 1s;
+  }
+  .form-password__code__button .otpr:hover {
+    background-position: 0 0;
+    color: #764BA2;
+  }
+  .modal-body p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .img-block {
+    width: 30%;
+    height: 100%;
+  }
+  .img-block img {
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+  }
+  .login {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form {
+    width: 100%;
+    height: 100%;
+    transition: all 2s;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #fff;
+  }
+  .form__title {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #96E6B3;
+    text-transform: uppercase;
+    line-height: 1.5em;
+  }
+  .form__close {
+    position: absolute;
+    left: 90%;
+    top: 0%;
+  }
+  .form__close img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+  }
+  .form__login {
+    margin: 20px 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .form__login__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .form__login__box__email {
+    width: 100%;
+    height: 50px;
+    margin: 20px 0px;
+    border: none;
+    background: none;
+    border-bottom: 3px solid #764BA2;
+    padding-left: 10px;
+    color: #000;
+  }
+  .form__login__box__password {
+    width: 100%;
+    height: 50px;
+    margin: 20px 0px;
+    border: none;
+    background: none;
+    border-bottom: 3px solid #764BA2;
+    padding-left: 10px;
+    color: #000;
+  }
+  .form__link {
+    display: flex;
+    justify-content: center;
+    margin: 0px 30px;
+    cursor: pointer;
+  }
+  .form__link__forget {
+    color: #764BA2;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .form__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .form__button__entry {
+    padding: 5px 20px;
+    width: 150px;
+    background: none;
+    border-radius: 0px;
+    border: 3px solid #96E6B3;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    color: #96E6B3;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #96E6B3 50%, #96E6B3);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all 1s;
+    margin-right: 20px;
+  }
+  .form__button__entry:hover {
+    background-position: 0 0;
+    color: #764BA2;
+  }
+  .form__button__registr:hover {
+    background-position: 0 0;
+    color: #764BA2;
+  }
+  .form__button__registr {
+    padding: 5px 20px;
+    width: 150px;
+    background: none;
+    border-radius: 0px;
+    border: 3px solid #96E6B3;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    color: #96E6B3;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #96E6B3 50%, #96E6B3);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all 1s;
+  }
+  .registration {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-reg {
+    width: 100%;
+    height: 100%;
+    transition: all 2s;
+    position: relative;
+    left: 0;
+    z-index: 9;
+    background-color: #fff;
+    border: 1px solid #fff;
+  }
+  .form-reg__close {
+    position: absolute;
+    left: 90%;
+    top: 0%;
+  }
+  .form-reg__close img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+  }
+  .form-reg__title {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #A3D9FF;
+    text-transform: uppercase;
+    line-height: 1.5em;
+  }
+  .registration-form {
+    margin: 0px 20px;
+  }
+  .registration-form__box {
+    display: flex;
+    flex-direction: column;
+  }
+  .registration-form__box input {
+    margin-top: 30px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    background: none;
+    border-bottom: 3px solid #A3D9FF;
+    padding-left: 10px;
+    font-size: 15px;
+    color: #000;
+  }
+  .registration-form__check {
+    margin-top: 20px;
+    color: #000;
+  }
+  .registration-form__check #exampleRadios1 {
+    color: #764BA2;
+  }
+  .registration-form__button {
+    display: flex;
+    justify-content: center;
+  }
+  .registration-form__button .registr {
+    padding: 5px 20px;
+    width: 300px;
+    background: none;
+    border-radius: 0px;
+    border: 3px solid #A3D9FF;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #A3D9FF;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #A3D9FF 50%, #A3D9FF);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all 1s;
+  }
+  .registration-form__button .registr:hover {
+    background-position: 0 0;
+    color: #764BA2;
+  }
+  .registration-form__confirm input {
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    border: 2px solid #BE2D29;
+    padding-left: 10px;
+    font-size: 20px;
+  }
+  .form-check {
+    margin: 5px 10px;
+  }
+  .form-check__input {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+  .form-check__label {
+    margin-left: 20px;
+    font-size: 15px;
+  }
+  .password {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-pasw {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+  }
+  .form-pasw__close {
+    position: absolute;
+    left: 94%;
+    top: 0%;
+  }
+  .form-pasw__close img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+  }
+  .form-pasw__title {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #DA3E52;
+    text-transform: uppercase;
+    line-height: 1.5em;
+  }
+  .form-password {
+    margin: 0px 20px;
+  }
+  .form-password__box {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-password__box input {
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    background: none;
+    border-bottom: 3px solid #DA3E52;
+    padding-left: 10px;
+    font-size: 15px;
+  }
+  .form-password__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .form-password__button .eml-otpr {
+    padding: 5px 20px;
+    width: 150px;
+    background: none;
+    border-radius: 0px;
+    border: 3px solid #DA3E52;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    color: #DA3E52;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #DA3E52 50%, #DA3E52);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all 1s;
+  }
+  .form-password__button .eml-otpr:hover {
+    background-position: 0 0;
+    color: #764BA2;
+  }
+  .form-password__code {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: none;
+  }
+  .form-password__code__box input {
+    margin-top: 20px;
+    width: 90%;
+    height: 30px;
+    border: none;
+    background: none;
+    border-bottom: 3px solid #DA3E52;
+    font-size: 15px;
+  }
+  .form-password__code__button {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .form-password__code__button .otpr {
+    padding: 5px 20px;
+    width: 150px;
+    background: none;
+    border-radius: 0px;
+    border: 3px solid #DA3E52;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    color: #DA3E52;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #DA3E52 50%, #DA3E52);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all 1s;
+  }
+  .form-password__code__button .otpr:hover {
+    background-position: 0 0;
+    color: #764BA2;
+  }
+  .modal-body p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .img-block {
+    width: 20%;
+    height: 100%;
+  }
+  .img-block img {
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+  }
+  .login {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form {
+    width: 100%;
+    height: 100%;
+    transition: all 2s;
+    position: relative;
+    left: 0;
+    z-index: 9;
+    background-color: #fff;
+    border: 1px solid #fff;
+  }
+  .form__title {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #96E6B3;
+    text-transform: uppercase;
+    line-height: 1.5em;
+  }
+  .form__close {
+    position: absolute;
+    left: 88%;
+    top: 0%;
+  }
+  .form__close img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+  }
+  .form__login {
+    margin: 20px 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .form__login__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .form__login__box__email {
+    width: 100%;
+    height: 50px;
+    margin: 20px 0px;
+    border: none;
+    background: none;
+    border-bottom: 3px solid #764BA2;
+    padding-left: 10px;
+    color: #000;
+  }
+  .form__login__box__password {
+    width: 100%;
+    height: 50px;
+    margin: 20px 0px;
+    border: none;
+    background: none;
+    border-bottom: 3px solid #764BA2;
+    padding-left: 10px;
+    color: #000;
+  }
+  .form__link {
+    display: flex;
+    justify-content: center;
+    margin: 0px 30px;
+    cursor: pointer;
+  }
+  .form__link__forget {
+    color: #764BA2;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .form__button {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .form__button__entry {
+    padding: 5px 20px;
+    width: 150px;
+    background: none;
+    border-radius: 0px;
+    border: 3px solid #96E6B3;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    color: #96E6B3;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #96E6B3 50%, #96E6B3);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all 1s;
+    margin-right: 20px;
+  }
+  .form__button__entry:hover {
+    background-position: 0 0;
+    color: #764BA2;
+  }
+  .form__button__registr:hover {
+    background-position: 0 0;
+    color: #764BA2;
+  }
+  .form__button__registr {
+    padding: 5px 20px;
+    width: 150px;
+    background: none;
+    border-radius: 0px;
+    border: 3px solid #96E6B3;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    color: #96E6B3;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #96E6B3 50%, #96E6B3);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all 1s;
+  }
+  .registration {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-reg {
+    width: 100%;
+    height: 100%;
+    transition: all 2s;
+    position: relative;
+    left: 0;
+    z-index: 9;
+    background-color: #fff;
+    border: 1px solid #fff;
+  }
+  .form-reg__close {
+    position: absolute;
+    left: 90%;
+    top: 0%;
+  }
+  .form-reg__close img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+  }
+  .form-reg__title {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #A3D9FF;
+    text-transform: uppercase;
+    line-height: 1.5em;
+  }
+  .registration-form {
+    margin: 0px 20px;
+  }
+  .registration-form__box {
+    display: flex;
+    flex-direction: column;
+  }
+  .registration-form__box input {
+    margin-top: 30px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    background: none;
+    border-bottom: 3px solid #A3D9FF;
+    padding-left: 10px;
+    font-size: 15px;
+    color: #000;
+  }
+  .registration-form__check {
+    margin-top: 20px;
+    color: #000;
+  }
+  .registration-form__check #exampleRadios1 {
+    color: #764BA2;
+  }
+  .registration-form__button {
+    display: flex;
+    justify-content: center;
+  }
+  .registration-form__button .registr {
+    padding: 5px 20px;
+    width: 270px;
+    background: none;
+    border-radius: 0px;
+    border: 3px solid #A3D9FF;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    color: #A3D9FF;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #A3D9FF 50%, #A3D9FF);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all 1s;
+  }
+  .registration-form__button .registr:hover {
+    background-position: 0 0;
+    color: #764BA2;
+  }
+  .registration-form__confirm input {
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    border: 2px solid #BE2D29;
+    padding-left: 10px;
+    font-size: 20px;
+  }
+  .form-check {
+    margin: 5px 10px;
+  }
+  .form-check__input {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+  .form-check__label {
+    margin-left: 20px;
+    font-size: 15px;
+  }
+  .password {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-pasw {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+  }
+  .form-pasw__close {
+    position: absolute;
+    left: 90%;
+    top: 0%;
+  }
+  .form-pasw__close img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+  }
+  .form-pasw__title {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #DA3E52;
+    text-transform: uppercase;
+    line-height: 1.5em;
+  }
+  .form-password {
+    margin: 0px 20px;
+  }
+  .form-password__box {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-password__box input {
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    background: none;
+    border-bottom: 3px solid #DA3E52;
+    padding-left: 10px;
+    font-size: 15px;
+  }
+  .form-password__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .form-password__button .eml-otpr {
+    padding: 5px 20px;
+    width: 170px;
+    background: none;
+    border-radius: 0px;
+    border: 3px solid #DA3E52;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    color: #DA3E52;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #DA3E52 50%, #DA3E52);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all 1s;
+  }
+  .form-password__button .eml-otpr:hover {
+    background-position: 0 0;
+    color: #764BA2;
+  }
+  .form-password__code {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: none;
+  }
+  .form-password__code__title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #DA3E52;
+    text-transform: uppercase;
+    line-height: 1.5em;
+  }
+  .form-password__code__box {
+    margin-left: 10px;
+  }
+  .form-password__code__box input {
+    margin-top: 20px;
+    width: 90%;
+    height: 30px;
+    border: none;
+    background: none;
+    border-bottom: 3px solid #DA3E52;
+    padding-left: 10px;
+    font-size: 15px;
+  }
+  .form-password__code__button {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .form-password__code__button .otpr {
+    padding: 5px 20px;
+    width: 170px;
+    background: none;
+    border-radius: 0px;
+    border: 3px solid #DA3E52;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    color: #DA3E52;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #DA3E52 50%, #DA3E52);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all 1s;
+  }
+  .form-password__code__button .otpr:hover {
+    background-position: 0 0;
+    color: #764BA2;
+  }
+  .modal-body p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}

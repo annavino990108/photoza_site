@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/public/css/main.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <title></title>
+  </head>
+  <body class="acount-body">
+  {{>menu}}
+    <img src="/uploads{{file.path}}" alt="" style="width:400px; heigth:200px;">
+
+<p>Комментарии</p>
+{{#each file.comments}}
+<p><i>{{this.userName}}</i> {{this.userComment}}</p><br>
+<a href="">ответить</a>
+{{/each}}
+    <form class="" id="commentForm">
+
+      <input type="text" name="userId" value="{{user._id}}"  style="display:none">
+      <input type="text" name="imageId" value="{{file._id}}"  style="display:none">
+      <input type="text" name="userName" value="{{user.firstName}}{{user.lastName}}"><br>
+      <input type="text" name="comment"  value="" placeholder="Комментарий"><br>
+
+        <div class="form_button_log">
+          <button type="submit" name="log_but">Комментировать</button>
+        </div>
+      </div>
+
+    </form>
+<script src="/public/js/handle.js">
+
+</script>
+<script>
+function CommentUser(userId,imageId,userName,userComment) {
+  $.ajax({
+    url:'/api/comments',
+    contentType:'application/json',
+    type:'POST',
+    data:JSON.stringify({
+      userId:userId,
+      imageId:imageId,
+      userName:userName,
+      userComment:userComment
+    }),
+  }).done(function (data){
+    if(!data.ok){
+      $('img ').after('<p class="error">'+data.error+'</p>');
+     if(data.fields){
+        data.fields.forEach(function(item){
+          $('input[name='+item+']').addClass('error');
+        });
+      }
+    }else{
+      location.reload();
+    }
+  });
+}
+
+ $("#commentForm").submit(function (e) {
+   e.preventDefault();
+  var userId = this.elements["userId"].value;
+  var imageId = this.elements["imageId"].value;
+  var userName = this.elements["userName"].value;
+  var userComment = this.elements["comment"].value;
+
+  CommentUser(userId,imageId,userName,userComment);
+});
+
+$('img').bind('contextmenu', function(e) {
+return false;
+});
+</script>
+  </body>
+  </html>

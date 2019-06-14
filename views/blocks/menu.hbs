@@ -1,0 +1,20 @@
+<header class="menu">
+<div class="menu__left"><img src="/public/image/7774.gif"></div>
+
+  <div class="menu__right">
+    <a class="activ menu__right__link" href="/">Главная
+        <div data-menuanchor="block1" class="link"><a href="#block1">block1</a></div>
+        <div data-menuanchor="block2" class="link"><a href="#block2">block2</a></div>
+        <div data-menuanchor="block3" class="link"><a href="#block3">block3</a></div>
+        <div data-menuanchor="block4" class="link"><a href="#block4">block3</a></div>
+    </a>
+    <a class="menu__right__link" href="/site/search">Найти</a>
+    {{#if session_user}}
+    <a class="menu__right__link" href="/site/acount">Личный кабинет</a>
+    <a class="menu__right__link" href="/site/chat">Сообщения ({{user.new_messange}})</a>
+    <a class="menu__right__link" href="/api/logout">Выйти</a>
+    {{else}}
+    <a class="menu__right__link" href="/site/login">Войти</a>
+    {{/if}}
+  </div>
+</header>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PHOTOZA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/public/css/gallery.css" type = "text/css">
+  <link rel="stylesheet" href="/public/css/main.css" type = "text/css">
+  <link rel="stylesheet" href="/public/css/scroll.css" type = "text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body class="page-gallery">
+{{>menu}}
+
+<div class="gallery-box">
+ <div class="container">
+  <ul class="slides">
+    <div class="title-box">
+    <div class="back"><a href="{{back_href}}"><img src="/public/image/icons8-back-arrow-501.png"></a></div>
+    <div class="title">Галерея</div>
+    </div>
+    <div id="slide1"><img src="{{main_img.path}}" alt="" /></div>
+
+    <div class="comments">
+      <div class="comments__title">Комментарии</div>
+      {{#if session_user}}
+        <form class="comments__your" id="commentForm">
+            <div class="photo"><img src="{{user.image}}"></div>
+            <div class="information">
+              <input type="text" class="name" name="user_image" id="user_image" value="{{user.image}}"  style="display:none">
+              <input type="text" class="name" name="userId" id="userId" value="{{user._id}}"  style="display:none">
+              <input type="text" class="name" name="imageId" id="imageId" value="{{main_img._id}}"  style="display:none">
+              <input type="text" class="name" name="userName" id="userName" value="{{user.firstName}}{{user.lastName}}" style="border:none;"><br>
+              <textarea class="text" type="text" name="comment" id="comment" placeholder="Введите Ваш текст..."></textarea>
+              <button type="submit" class="send">Отправить</button>
+            </div>
+        </form>
+        {{else}}
+        Чтобы оставить комментарий, автторизуйтесь на сайте
+    {{/if}}
+
+      <div class="comments__title" id="list-comment"></div>
+
+      {{#each main_img.comments}}
+        <div class="comments__all" id="comments__all">
+          <div class="photo"><img src="{{this.image}}"></div>
+          <div class="information">
+            <div class="box-data">
+              <div class="name">{{this.userName}}</div>
+              <div class="date">{{this.date}}</div>
+            </div>
+          <div class="text">{{this.userComment}}</div>
+          </div>
+        </div>
+      {{/each}}
+
+  </ul>
+
+
+  <ul class="thumbnails">
+    {{#each file}}
+    <li>
+      <a class="showImage" id="{{this._id}}"><img src="{{this.imgshort}}" /></a>
+    </li>
+    {{/each}}
+  </ul>
+</div>
+
+</div>
+
+<script type="text/javascript" src="/public/js/gallery.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PHOTOZA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/public/css/gallery.css" type = "text/css">
+  <link rel="stylesheet" href="/public/css/main.css" type = "text/css">
+  <link rel="stylesheet" href="/public/css/scroll.css" type = "text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body class="page-gallery">
+  <header class="menu">
+  <div class="menu__left"><img src="/public/image/7774.gif"></div>
+
+    <div class="menu__right">
+      <a class="menu__right__link" href="index.html">Главная
+          <div data-menuanchor="block1" class="link"><a href="#block1">block1</a></div>
+          <div data-menuanchor="block2" class="link"><a href="#block2">block2</a></div>
+          <div data-menuanchor="block3" class="link"><a href="#block3">block3</a></div>
+          <div data-menuanchor="block4" class="link"><a href="#block4">block3</a></div>
+      </a>
+      <a class="menu__right__link" href="search.html">Найти</a>
+      <a class="menu__right__link" href="personal.html">Страница фотографа</a>
+      <a class="menu__right__link" href="chat.html">Чат с фотографом</a>
+      <a class="menu__right__link" href="error.html">Ошибка</a>
+      <a class="activ menu__right__link" href="gallery.html">Галерея</a>
+      <a class="menu__right__link" href="login.html">Войти</a>
+    </div>
+  </header>
+
+<div class="gallery-box">
+ <div class="container">
+  <ul class="slides">
+    <div class="title-box">
+    <div class="back"><a href="personal.html"><img src="/public/image/icons8-back-arrow-501.png"></a></div>
+    <div class="title">Галерея</div>
+    </div>
+    <li id="item-img"><img src="{{main_img.path}}" alt="" /></li>
+
+    <div class="comments">
+      <div class="comments__title">Комментарии</div>
+      {{#if session_user}}
+        <form class="comments__your" id="commentForm">
+            <div class="photo"><img src="{{user.image}}"></div>
+            <div class="information">
+              <input type="text" class="name" name="user_image" id="user_image" value="{{user.image}}"  style="display:none">
+              <input type="text" class="name" name="userId" id="userId" value="{{user._id}}"  style="display:none">
+              <input type="text" class="name" name="imageId" id="imageId" value="{{main_img._id}}"  style="display:none">
+              <input type="text" class="name" name="userName" id="userName" value="{{user.firstName}}{{user.lastName}}" style="border:none;"><br>
+              <textarea class="text" type="text" name="comment" id="comment" placeholder="Введите Ваш текст..."></textarea>
+              <button type="submit" class="send">Отправить</button>
+            </div>
+        </form>
+    {{/if}}
+      {{#each main_img.comments}}
+          <div class="comments__all" id="comments__all">
+            <div class="photo"><img src="{{this.image}}"></div>
+            <div class="information">
+              <div class="box-data">
+                <div class="name">{{this.userName}}</div>
+                <div class="date">{{this.date}}</div>
+              </div>
+            <div class="text">{{this.userComment}}</div>
+            </div>
+          </div>
+      {{/each}}
+    </div>
+  </ul>
+
+
+  <ul class="thumbnails">
+    {{#each file}}
+      <li>
+        <a class="showImage" id="{{this._id}}" ><img src="{{this.path}}" /></a>
+      </li>
+    {{/each}}
+  </ul>
+</div>
+</div>
+<script type="text/javascript" src="/public/js/gallery.js"></script>
+</body>
+</html>
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PHOTOZA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/public/css/gallery.css" type = "text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body class="page-gallery">
+<div class="gallery-box">
+ <div class="container">
+  <ul class="slides">
+    <div class="title-box">
+    <div class="back"><a href="{{back_href}}"><img src="/public/image/icons8-back-arrow-501.png"></a></div>
+    <div class="title">Галерея</div>
+    </div>
+    <li id="item-img"><img src="{{main_img.path}}" alt="" /></li>
+
+      <div class="comments">
+        {{#if session_user}}
+        <div class="comments__title">Комментарии</div>
+      <form class="comments__your" id="commentForm">
+          <div class="photo"><img src="{{user.image}}"></div>
+          <div class="information">
+            <input type="text" class="name" name="user_image" id="user_image" value="{{user.image}}"  style="display:none">
+            <input type="text" class="name" name="userId" id="userId" value="{{user._id}}"  style="display:none">
+            <input type="text" class="name" name="imageId" id="imageId" value="{{main_img._id}}"  style="display:none">
+            <input type="text" class="name" name="userName" id="userName" value="{{user.firstName}}{{user.lastName}}" style="border:none;"><br>
+            <textarea class="text" type="text" name="comment" id="comment" placeholder="Введите Ваш текст..."></textarea>
+            <button type="submit" class="send">Отправить</button>
+          </div>
+      </form>
+      {{else}}
+      <div class="comments__title">Комментарии</div>
+      {{/if}}
+      <div class="comments__title" id="list-comment">Комментарии пользователей</div>
+
+    {{#each main_img.comments}}
+        <div class="comments__all" id="comments__all">
+          <div class="photo"><img src="{{this.image}}"></div>
+          <div class="information">
+            <div class="box-data">
+              <div class="name">{{this.userName}}</div>
+              <div class="date">{{this.date}}</div>
+            </div>
+          <div class="text">{{this.userComment}}</div>
+          </div>
+        </div>
+    {{/each}}
+    </div>
+  </ul>
+
+
+  <ul class="thumbnails">
+    {{#each file}}
+    <li>
+      <a class="showImage" id="{{this._id}}" ><img src="{{this.path}}" /></a>
+    </li>
+    {{/each}}
+  </ul>
+</div>
+</div>
+
+<script type="text/javascript" src="/public/js/gallery.js"></script>
+</body>
+</html>

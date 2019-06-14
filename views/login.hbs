@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PHOTOZA/login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/public/css/login.css" type = "text/css">
+  <link rel="stylesheet" href="/public/css/scroll.css" type = "text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="/public/css/media-login.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body class="page_2">
+  <div class="grad"></div>
+  <div class="img-block"><img src="/public/image/img55-min.jpg"></div>
+  <!--форма авторизации-->
+<div class="login" id="loginForm">
+<div class="form">
+  <div class="form__title" id="form_title">Авторизация</div>
+  <div class="form__close"><a href="/"><img src="/public/image/icons8-multiply-52.png"></a></div>
+  <form class="form__login" id="login_form">
+   <div class="form__login__box">
+    <input type="text" name="email" class="form__login__box__email" placeholder="Email">
+    <input type="password" name="password" class="form__login__box__password" placeholder="Password">
+   </div>
+
+   <div class="form__link">
+    <div class="form__link__forget" id="reset_password">Забыли пароль?</div>
+   </div>
+   <div class="form__button">
+    <button type="submit" class="form__button__entry">Войти</button>
+    <div class="form__button__registr" id="btn-reg">Регистрация</div
+   </div>
+     </form>
+</div>
+</div>
+</div>
+<!--форма регистрации-->
+<div class="registration" id="regForm">
+  <div class="form-reg">
+    <div class="form-reg__title" id="form_title_reg">Регистрация</div>
+    <div class="form-reg__close"><a href=""><img src="/public/image/icons8-multiply-52.png"></a></div>
+    <form class="registration-form" id="singinForm">
+      <div class="registration-form__box">
+        <input type="text" name="firstName" placeholder="Имя">
+        <input type="text" name="lastName" placeholder="Фамилия">
+        <input type="text" name="email" id="email" placeholder="Email">
+        <input type="password" name="password" placeholder="Пароль"><br>
+        <label for="district">Выберите округ</label>
+        <select id="district">
+          <option disabled selected>Округ</option>
+          {{#each district}}
+            <option value="{{this.district}}">{{this.name}}</option>
+          {{/each}}
+        </select><br>
+        <label for="district">Выберите регион</label>
+        <select id="region">
+          <option disabled selected>Регион</option>
+          {{#each region}}
+            <option value="{{this.region}}">{{this.name}}</option>
+          {{/each}}
+        </select><br>
+        <label for="district">Выберите город</label>
+        <select id="city">
+          <option disabled selected>Город</option>
+          {{#each city}}
+            <option value="{{this.city}}">{{this.name}}</option>
+          {{/each}}
+        </select><br>
+
+      </div>
+        <div class="registration-form__check">
+          <div class="form-check">
+            <input class="form-check__input" type="radio" name="role" value="user">
+            <label class="form-check__label" for="exampleRadios1">
+             Я - Заказчик
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check__input" type="radio" name="role" value="photographer">
+            <label class="form-check__label" for="exampleRadios2">
+              Я - Фотограф
+            </label>
+          </div>
+        </div>
+
+   <div class="registration-form__button">
+     <button type="submit" class="registr">Зарегистрироваться</button>
+   </div>
+    </form>
+  </div>
+</div>
+
+<div class="password" id="codeForm">
+  <div class="form-pasw">
+    <div class="form-pasw__title" id="form_title_verif" >Введите код из email</div>
+    <div class="form-pasw__close"><a href=""><img src="/public/image/icons8-multiply-52.png"></a></div>
+    <form class="form-password" id="verifi">
+      <div class="form-password__box">
+        <input type="password" class="email" placeholder="Code" name="secret_token">
+      </div>
+      <div class="form-password__button">
+        <button type="submit" class="eml-otpr">Подтвердить</button>
+      </div>
+    </form>
+ </div>
+</div>
+
+<div class="password" id="resetForm">
+  <div class="form-pasw"  id="resetForm_one">
+    <div class="form-pasw__title" id="form_title_resert">Сбросить пароль</div>
+    <div class="form-pasw__close"><a href=""><img src="/public/image/icons8-multiply-52.png"></a></div>
+    <form class="form-password" id="send_pass">
+      <div class="form-password__box">
+        <input type="text" class="email" placeholder="Email" name="user_email">
+      </div>
+      <div class="form-password__button">
+        <button type="submit" class="eml-otpr">Отправить</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="form-pasw" id="resetForm_two">
+    <div class="form-pasw__title"  id="pasw_update" >Введите пароль</div>
+    <div class="form-pasw__close"><a href=""><img src="/public/image/icons8-multiply-52.png"></a></div>
+    <form class="form-password" id="recover_pass">
+      <div class="form-password__box">
+        <input type="password" class="email" placeholder="Password" name="confirm_password">
+      </div>
+      <div class="form-password__button" id="resetFormbtn">
+        <button type="submit" class="eml-otpr">Отправить</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script type="text/javascript" src="/public/js/geo.js"></script>
+<script type="text/javascript" src="/public/js/login.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

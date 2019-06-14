@@ -1,0 +1,256 @@
+.account-page {
+  background-image: linear-gradient(0deg, rgba(118, 75, 162, 0.9), rgba(102, 126, 234, 0.9)), url(/app/image/DSC03855-min.JPG);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: Helvetica;
+}
+
+.menu {
+  position: absolute;
+}
+
+.account {
+  width: 90%;
+  height: auto;
+  margin: 100px auto;
+}
+
+.account-title {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+}
+
+.account-title span {
+  font-weight: bold;
+  font-size: 50px;
+  color: #F2E94E;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0px 20px;
+  line-height: 1.5em;
+}
+
+.account-until {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.information {
+  display: flex;
+  flex-direction: row;
+  margin: 20px auto;
+  padding-bottom: 30px;
+  justify-content: center;
+  padding-left: 100px;
+  width: 80%;
+  height: 500px;
+  background-color: #fff;
+  position: relative;
+}
+
+.information__photo {
+  position: absolute;
+  top: -10%;
+  left: -10%;
+}
+
+.information__photo img {
+  width: 500px;
+  height: 500px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.information__about-me__name {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.information__about-me__city {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.information__about-me__style {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.information__about-me__about-me {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.information__about-me__cost {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.information-edit {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.information-edit button {
+  border: none;
+  background: none;
+}
+
+.information-edit__button {
+  padding: 10px 40px;
+  width: 350px;
+  background: none;
+  border-radius: 0px;
+  border: 3px solid #764BA2;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  color: #764BA2;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  background-image: linear-gradient(to left, transparent, transparent 50%, #764BA2 50%, #764BA2);
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all 1s;
+}
+
+.information-edit__button:hover {
+  background-position: 0 0;
+  color: #fff;
+}
+
+.information-edit a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.download {
+  margin: 10px auto 0px auto;
+  padding: 10px 0px;
+  width: 100%;
+  height: auto;
+  background-color: none;
+  color: #000;
+  text-align: center;
+  height: auto;
+  border: 3px dashed #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.download__title {
+  align-self: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.download__img {
+  margin: 0 auto;
+}
+
+.download__img .fl_upld {
+  width: 300px;
+  margin-top: 20px;
+}
+
+.download__img #fl_inp {
+  display: none;
+}
+
+.download__img .fl_upld label {
+  padding: 10px 40px;
+  width: 350px;
+  background: none;
+  border-radius: 0px;
+  border: 3px solid #F2E94E;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  color: #F2E94E;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  background-image: linear-gradient(to left, transparent, transparent 50%, #F2E94E 50%, #F2E94E);
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all 1s;
+}
+
+.download__img .fl_upld label:hover {
+  background-position: 0 0;
+  color: #764BA2;
+}
+
+.download__img #fl_nm {
+  margin-top: 10px;
+  color: #fff;
+}
+
+.download__img .upload-button {
+  padding: 10px 20px;
+  width: 300px;
+  background: none;
+  border-radius: 0px;
+  border: 3px solid #F2E94E;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  color: #F2E94E;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  background-image: linear-gradient(to left, transparent, transparent 50%, #F2E94E 50%, #F2E94E);
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all 1s;
+}
+
+.download__img .upload-button:hover {
+  background-position: 0 0;
+  color: #764BA2;
+}
+
+.gallery {
+  width: 100%;
+}
+
+.gallery .gallery-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px auto;
+  width: 90%;
+}
+
+.gallery .photobox {
+  position: relative;
+}
+
+.gallery .photobox .photo-img {
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+}
+
+.gallery .photobox .delete {
+  cursor: pointer;
+  position: absolute;
+  top: 70%;
+  right: 10%;
+  width: 40px;
+  height: 40px;
+  z-index: 99999999;
+}

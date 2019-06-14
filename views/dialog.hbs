@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PHOTOZA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/public/css/main.css" type = "text/css">
+  <link rel="stylesheet" href="/public/css/chat.css" type = "text/css">
+   <link rel="stylesheet" href="/public/css/scroll.css" type = "text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body class="page-chat">
+  <div class="chat-head">
+   <div class="chat-head__container">
+     <div class="foto">
+       <img src="{{recipient.image}}">
+     </div>
+     <div class="inform">
+     <div class="inform__name">{{recipient.firstName}} {{recipient.lastName}}</div>
+     </div>
+     <div class="back">
+     <a href="/site/chat"><img class="dialog" src="/public/image/icons8-back-arrow-501.png"></a>
+     </div>
+   </div>
+ </div>
+   <div class="chat-box">
+     {{#each dialog.messange}}
+     {{#if_equal this.sender_id}}
+     <div class="message-photographer">
+      <div class="container" style="background-color: #00FFFF;">
+        <div class="container-inf">
+          <div class="container-inf__name">{{this.sender_name}}</div>
+          <div class="container-inf__data">{{this.date}}</div>
+        </div>
+        <div class="container-text">{{this.text_mess}}</div>
+      </div>
+    </div>
+    {{else}}
+    <div class="message-client">
+     <div class="container">
+       <div class="container-inf">
+         <div class="container-inf__name">{{this.sender_name}}</div>
+         <div class="container-inf__data">{{this.date}}</div>
+       </div>
+       <div class="container-text">{{this.text_mess}}</div>
+     </div>
+   </div>
+    {{/if_equal}}
+    {{/each}}
+
+  </div>
+
+
+  <div class="chat-message">
+    <form id="messange">
+      <div class="chat-message__container">
+        <input type="text" name="dlg_id" value="{{dialog._id}}"  style="display:none">
+        <input type="text" name="sender_id" value="{{sender._id}}"  style="display:none">
+        <input type="text" name="sender_name" value="{{sender.firstName}} {{sender.lastName}}"  style="display:none">
+        <input type="text" name="recipient_id" value="{{recipient._id}}"  style="display:none">
+        <textarea type="text" name="mess" value=""></textarea>
+        <button type="sumbit" class="chat-message__button">Отправить</button>
+      </div>
+    </form>
+  </div>
+<script type="text/javascript" src="/public/js/dialog.js"></script>
+</body>
+</html>

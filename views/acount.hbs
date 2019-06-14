@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PHOTOZA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/public/css/main.css" type = "text/css">
+  <link rel="stylesheet" href="/public/css/account.css" type = "text/css">
+  <link rel="stylesheet" href="/public/css/scroll.css" type = "text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+</head>
+<body class="account-page">
+  {{>menu}}
+  <div class="account">
+  <div class="account-title">
+    <span>Личный кабинет</span>
+  </div>
+  <div class="account-until">
+    <div class="information">
+      <div class="information__photo"><img src="{{user.image}}"></div>
+      <div class="information__about-me">
+        <div class="information__about-me__name">{{user.firstName}} {{user.lastName}}</div>
+        <div class="information__about-me__city">{{user.city_name}}</div>
+        <div class="information__about-me__style">В каких направлениях съемка</div>
+        <div class="information__about-me__about-me">{{user.about_youself}}</div>
+        <div class="information__about-me__cost">{{user.cost_works}}</div>
+      </div>
+      <form class="information-edit">
+          <button type="submit"><a href="/site/edit" class="information-edit__button">Редактировать</a></button>
+        </form>
+    </div>
+
+{{#if_user user.role "photographer"}}
+
+<div class="gallery">
+  <div class="download">
+   <span class="download__title">Загрузить фото</span>
+    <div class="download__img">
+    <form  method="POST" enctype="multipart/form-data" name="fileinfo" id="fileinfo">
+     <div class="fl_upld">
+       <label><input id="fl_inp" type="file" name="file">Выберите файл</label>
+       <div id="fl_nm">Файл не выбран</div>
+     </div>
+     <button type="submit" name="button"class="upload-button">Загрузить</button>
+    </form>
+   </div>
+ </div>
+
+  <div class="gallery-img">
+    {{#each file}}
+    <div class="photobox">
+      <img class="photo-img" src="{{this.imgshort}}" onmouseover="openBlock(this)">
+      <a href="" class="removeLink" id = "{{this._id}}"><img class="delete" src="/public/image/icons8-trash-52.png"></a>
+    </div>
+    {{/each}}
+  </div>
+    </div>
+  </div>
+</div>
+{{/if_user}}
+<!--футер-->
+<div class="fon4">
+<footer class="footer">
+    © 2019 «PHOTOZA»
+</footer>
+</div>
+
+<script type="text/javascript" src="/public/js/acount.js"></script>
+
+</script>
+</body>
+</html>
