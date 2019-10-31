@@ -17,7 +17,7 @@
     "migrate-mongo": "^5.0.1",
     "mkdirp": "^0.5.1",
     "mongodb": "^3.1.0",
-    "mongoose": "^5.4.19",
+    "mongoose": "^5.7.5",
     "multer": "^1.4.1",
     "node-telegram-bot-api": "^0.30.0",
     "nodemailer": "^5.1.1",
